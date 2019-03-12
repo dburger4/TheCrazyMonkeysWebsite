@@ -1,0 +1,271 @@
+body {
+    background: linear-gradient(-60deg, #0d0d0d, #260E58);
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 960px;
+    margin: auto;
+}
+
+#title {
+    color: white;
+    font-size: 90px;
+    padding: 10px 0 0 0;
+    margin: 0;
+    min-width: 960px;
+    height: 75px;
+    line-height: 1.1;
+    text-shadow: 1px 2px 3px black;
+    letter-spacing: 0.04em;
+    text-align: center;
+    font-weight: 100;
+}
+
+#subtitle {
+    color: white;
+    word-spacing: 0.3em;
+    letter-spacing: 0.15em;
+    height: 27px;
+    text-shadow: 1px 2px 3px black;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    min-width: 650px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 7px;
+    margin: 5px;
+    list-style: none; 
+    min-width: 500px;
+    justify-content: center;
+}
+
+#NavHome, #NavAbout, #NavShows, #NavMembers, #NavSocial {
+    text-decoration: none;
+    color: white;
+    width: 125px;
+    height: 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    border: .5px solid white;
+    padding: 5px;
+    font-size: 20px;
+    margin: 0px 8px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#NavHome:hover {
+    background-color: #005D6D;
+}
+
+#NavAbout:hover {
+    background-color: #60C383;
+}
+
+#NavShows:hover {
+    background-color: #917FA3;
+}
+
+#NavMembers:hover {
+    background-color: #902c40;
+}
+
+#NavSocial:hover {
+    background-color: #EA9A28;
+}
+
+.showsTitle {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid white;
+    border-bottom-color: transparent;
+}
+
+.showsTitle h1 {
+    font-size: 55px;
+    margin: 0;
+    color: white;
+    font-weight: 100;
+    line-height: 1.3;
+    height: 60px
+}
+
+.showsTitle h3 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.nextShowGrid {
+    width: 900px;
+    height: 270px;
+    margin: auto;
+    display: grid;
+    grid-template: 35px 1fr 175px / 240px 1fr;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#nextShow {
+    font-size: 40px;
+    line-height: .7;
+    font-weight: 100;
+    padding-left: 25px;
+    grid-area: 1/1/2/3;
+    color: white;
+    margin: 0;
+}
+
+#month {
+    border: 5px solid black;
+    border-bottom: 3px solid black;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 1.1;
+    grid-area: 2/1/3/2;
+    height: 60px;
+    margin: 0;
+}
+
+#date {
+    background-color: white;
+    grid-area: 3/1/4/2;
+    margin: 0;
+    font-size: 150px;
+    font-weight: 100;
+    line-height: 1.3;
+    text-align: center;
+    border: 5px solid black;
+    border-top: transparent;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.75);
+}
+
+.info {
+    background-color: white;
+    grid-area: 2/2/4/3;
+    border: 3px solid black;
+    border-left: transparent;
+    background: linear-gradient(0deg, #E5E5E5, #F7F7F7);
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.75);
+}
+
+#timePlace {
+    font-size: 45px;
+    width: 600px;
+    padding-left: 10px;
+    margin: 0;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+#mapLink {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+#mapLink:hover {
+    text-decoration: underline;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#extraInfo {
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1.7;
+}
+
+.upcomingShows {
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    margin-top: 0;
+    display: grid;
+    grid-template: 30px 45px / 75px 1fr;
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.75);
+}
+
+#upcomingMonth {
+    background-color: red;
+    color: white;
+    margin: 0;
+    grid-area: 1/1/2/2;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-bottom: 1px solid black;
+    line-height: 1.4;
+}
+
+#upcomingDate{
+    margin: 0;
+    grid-area: 2/1/3/2;
+    font-size: 45px;
+    text-align: center;
+    line-height: 1.2;
+    border: 2px solid black;
+    border-top: transparent;
+}
+
+#upcomingInfo {
+    margin: 0;
+    grid-area: 1/2/3/3;
+    border: 2px solid black;
+    border-left: transparent;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 30px;
+    border-radius: 0px 30px 30px 0px;
+    background: linear-gradient(0deg, #E5E5E5, #F7F7F7);
+}
+
+
+footer {
+    width: 100%;
+    background-color: #0d0d0d;
+    height: 125px;
+    margin-top: 15px;
+}
+
+.SocialMediaIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#FacebookLogo, #InstagramLogo, #TwitterLogo, #YoutubeLogo {
+    width: 75px;
+    height: 75px;
+    margin: 0px 20px;
+}
+
+footer, a {
+    color: #696969;
+    text-align: center;
+    line-height: 0.5;
+}
+
+#mapLink {
+    color: inherit;
+}
